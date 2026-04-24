@@ -35,6 +35,7 @@ export default async function AdminDashboard() {
           ['/admin/coaching', 'Manage coaching'],
           ['/admin/experiences', 'Manage experiences'],
           ['/admin/tournaments', 'Manage tournaments'],
+          ['/admin/event-inquiries', 'View event inquiries'],
           ['/admin/shop', 'Manage shop'],
           ['/admin/league', 'Manage league'],
           ['/admin/settings', 'Update settings'],
@@ -70,9 +71,22 @@ export default async function AdminDashboard() {
           <div className="mt-5 grid gap-3">
             {summary.recentEventInquiries.map((item) => (
               <div key={item.id} className="rounded-[1.25rem] border border-white/8 p-4">
-                <div className="text-white">{item.fullName}</div>
-                <div className="mt-1 text-xs uppercase tracking-[0.18em] text-white/40">
-                  {item.inquiryType} | {item.expectedGuests || 'Guests TBD'}
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <div className="text-white">{item.fullName}</div>
+                    <div className="mt-1 text-xs uppercase tracking-[0.18em] text-white/40">
+                      {item.inquiryType} | {item.expectedGuests || 'Guests TBD'}
+                    </div>
+                  </div>
+                  <div className="text-right text-xs uppercase tracking-[0.18em] text-[#ffb300]">
+                    {item.preferredDate || 'Date TBD'}
+                  </div>
+                </div>
+                <div className="mt-3 grid gap-1 text-sm text-white/68">
+                  <div>{item.email}</div>
+                  <div>{item.phone || 'Phone not provided'}</div>
+                  {item.companyName && <div>{item.companyName}</div>}
+                  <div className="line-clamp-2 text-white/52">{item.message}</div>
                 </div>
               </div>
             ))}

@@ -13,9 +13,64 @@ const eventInquirySchema = z.object({
   message: z.string().min(10),
 });
 
+async function sendEventInquiryEmail(payload: z.infer<typeof eventInquirySchema>) {
+  const apiKey = process.env.RESEND_API_KEY;
+  const notifyTo = process.env.ADMIN_NOTIFICATION_EMAIL;
+  const fromEmail = process.env.NOTIFICATION_FROM_EMAIL || 'Urban Sport <onboarding@resend.dev>';
+
+  if (!apiKey || !notifyTo) {
+    return;
+  }
+
+  const safe = (value?: string) => value?.trim() || 'Not provided';
+
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: fromEmail,
+      to: [notifyTo],
+      subject: `New Urban Sport event inquiry: ${payload.fullName}`,
+      reply_to: payload.email,
+      html: `
+        <div style="font-family:Arial,sans-serif;line-height:1.6;color:#111">
+          <h2>New Urban Sport event inquiry</h2>
+          <p><strong>Type:</strong> ${safe(payload.inquiryType)}</p>
+          <p><strong>Name:</strong> ${safe(payload.fullName)}</p>
+          <p><strong>Email:</strong> ${safe(payload.email)}</p>
+          <p><strong>Phone:</strong> ${safe(payload.phone)}</p>
+          <p><strong>Company:</strong> ${safe(payload.companyName)}</p>
+          <p><strong>Preferred date:</strong> ${safe(payload.preferredDate)}</p>
+          <p><strong>Expected guests:</strong> ${safe(payload.expectedGuests)}</p>
+          <p><strong>Message:</strong><br/>${safe(payload.message).replace(/\n/g, '<br/>')}</p>
+        </div>
+      `,
+      text: [
+        'New Urban Sport event inquiry',
+        `Type: ${safe(payload.inquiryType)}`,
+        `Name: ${safe(payload.fullName)}`,
+        `Email: ${safe(payload.email)}`,
+        `Phone: ${safe(payload.phone)}`,
+        `Company: ${safe(payload.companyName)}`,
+        `Preferred date: ${safe(payload.preferredDate)}`,
+        `Expected guests: ${safe(payload.expectedGuests)}`,
+        `Message: ${safe(payload.message)}`,
+      ].join('\n'),
+    }),
+  });
+}
+
 export async function POST(request: NextRequest) {
   const body = await request.json();
   const payload = eventInquirySchema.parse(body);
   const created = await createEventInquiry(payload);
+  try {
+    await sendEventInquiryEmail(payload);
+  } catch (error) {
+    console.error('Unable to send event inquiry email', error);
+  }
   return NextResponse.json({ ok: true, data: created });
 }

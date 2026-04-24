@@ -88,9 +88,9 @@ export default function EventInquiryForm() {
             We&apos;ll be in touch within 24 hours to discuss your event and shape a premium proposal.
           </p>
         </div>
-        <div className="flex items-center gap-2 text-white/30 text-sm">
+        <div className="flex items-center gap-2 text-white/45 text-sm">
           <Mail className="w-4 h-4" />
-          The request is now stored in the local admin system.
+          Your inquiry has been sent to the Urban Sport team.
         </div>
       </motion.div>
     );

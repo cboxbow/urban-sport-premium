@@ -14,6 +14,7 @@ const ADMIN_LINKS = [
   { href: '/admin/experiences', label: 'Experiences', icon: Sparkles },
   { href: '/admin/tournaments', label: 'Tournaments', icon: Trophy },
   { href: '/admin/booking-requests', label: 'Booking Requests', icon: CalendarDays },
+  { href: '/admin/event-inquiries', label: 'Event Inquiries', icon: CalendarDays },
   { href: '/admin/gallery', label: 'Gallery', icon: Images },
   { href: '/admin/shop', label: 'Shop', icon: ShoppingBag },
   { href: '/admin/league', label: 'League', icon: Trophy },
