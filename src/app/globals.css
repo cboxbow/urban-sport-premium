@@ -494,14 +494,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.73) contrast(1.1) saturate(0.98);
+    filter: brightness(0.84) contrast(1.12) saturate(1.02);
     animation: slowHeroZoom 22s ease-in-out infinite alternate;
   }
 
   .hero-overlay {
     background:
-      radial-gradient(circle at 24% 36%, rgba(255, 179, 0, 0.12), transparent 32%),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.56));
+      radial-gradient(circle at 24% 36%, rgba(255, 179, 0, 0.1), transparent 30%),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.42));
   }
 
   .hero-grain {
