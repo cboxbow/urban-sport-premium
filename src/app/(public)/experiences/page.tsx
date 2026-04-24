@@ -77,7 +77,7 @@ export default async function ExperiencesPage() {
               <article className="surface-panel overflow-hidden p-0">
                 <div className="border-b border-white/8 bg-black px-5 py-5">
                   <div className="relative h-[280px]">
-                    <Image src="/clubs/black-river/black-river-aerial-master.png" alt="Black River events" fill className="object-cover" />
+                    <Image src="/clubs/black-river/urban-black-river.jpeg" alt="Black River events" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="p-6">

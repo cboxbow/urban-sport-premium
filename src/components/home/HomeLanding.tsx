@@ -23,13 +23,6 @@ function getClubDisplayLine(club: ClubContent) {
   return `${club.courtCount} premium padel courts${club.footFiveCount ? ` and ${club.footFiveCount} foot five` : ''}`;
 }
 
-const LOGO_STRIP = [
-  '/logos/urban-sport-primary-light.png',
-  '/logos/urban-sport-primary-dark.png',
-  '/logos/urban-sport-compact-light.png',
-  '/logos/urban-sport-compact-dark.png',
-];
-
 const heroItem = {
   hidden: { opacity: 0, y: 28, filter: 'blur(8px)' },
   show: (delay = 0) => ({
@@ -369,19 +362,6 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
             <p className="font-home-display text-2xl uppercase tracking-[0.08em] text-white sm:text-3xl">
               Urban Sport <span className="text-[#c9a24a]">— The original padel clubs in Mauritius.</span>
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-              {LOGO_STRIP.map((src) => (
-                <Link key={src} href="/" className="transition-transform duration-300 hover:-translate-y-0.5">
-                  <Image
-                    src={src}
-                    alt="Urban Sport logo"
-                    width={150}
-                    height={38}
-                    className="h-7 w-auto opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
-                  />
-                </Link>
-              ))}
-            </div>
           </motion.div>
         </div>
       </section>

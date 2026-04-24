@@ -5,10 +5,10 @@ import { getFooterData } from '@/lib/site-content';
 const PARTNER_LOGO_RAIL = [
   {
     id: 'mpl-msra',
-    src: '/partners/mpl-msra.jpg',
+    src: '/partners/mpl-msra.png',
     alt: 'Mauritius Squash Rackets Association and Mauritius Padel League',
-    width: 320,
-    height: 78,
+    width: 400,
+    height: 96,
   },
   {
     id: 'afrasia',
@@ -29,6 +29,13 @@ const PARTNER_LOGO_RAIL = [
     src: '/partners/heineken.png',
     alt: 'Heineken 0.0',
     width: 180,
+    height: 74,
+  },
+  {
+    id: 'weaver-fintech',
+    src: '/partners/weaver-fintech.png',
+    alt: 'Weaver Fintech',
+    width: 190,
     height: 74,
   },
   {
@@ -79,14 +86,20 @@ export default async function SiteFooter() {
             {PARTNER_LOGO_RAIL.map((logo) => (
               <div
                 key={logo.id}
-                className="flex min-h-[68px] items-center justify-center px-1 py-1 transition-all duration-300 hover:-translate-y-0.5"
+                className={`flex items-center justify-center px-1 py-1 transition-all duration-300 hover:-translate-y-0.5 ${
+                  logo.id === 'mpl-msra' ? 'min-h-[86px]' : 'min-h-[68px]'
+                }`}
               >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
-                  className="h-auto max-h-[52px] w-auto opacity-88 transition-all duration-300 hover:opacity-100"
+                  className={`h-auto w-auto transition-all duration-300 hover:opacity-100 ${
+                    logo.id === 'mpl-msra'
+                      ? 'max-h-[72px] opacity-95'
+                      : 'max-h-[52px] opacity-88'
+                  }`}
                 />
               </div>
             ))}
