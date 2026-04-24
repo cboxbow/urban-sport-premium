@@ -35,7 +35,7 @@ const CIRCUITS: Array<{
       'Grand Baie carries the social side of the Urban Sport tournament season with regular men, mixed, and junior stops. The poster folder shows a structured monthly rhythm built around repeat club play and a clear seasonal cadence.',
     posterImage: '/tournaments/season/grand-baie-season-poster.jpg',
     supportImage: '/tournaments/season/grand-baie-date-board.jpeg',
-    posterHref: '/tournaments/grand-baie-season-poster-2026.pdf',
+    posterHref: '/downloads/grand-baie-season-poster-2026.pdf',
     accent: '#ffb300',
     stats: ['15 listed season stops', 'M500 major category included', 'Club-first event rhythm'],
     highlights: [
@@ -91,7 +91,7 @@ const CIRCUITS: Array<{
       'Black River reads as the larger tournament destination in the source folder. The season poster shows a denser competition atmosphere, larger category spread, and a stronger event-day identity across men, mixed, junior, and league moments.',
     posterImage: '/tournaments/season/black-river-season-poster.jpeg',
     supportImage: '/tournaments/season/urban-2026-calendar.jpeg',
-    posterHref: '/tournaments/black-river-season-poster-2026.pdf',
+    posterHref: '/downloads/black-river-season-poster-2026.pdf',
     accent: '#ffb300',
     stats: ['15 listed season stops', 'M500 major category included', 'Competition-led venue'],
     highlights: [
@@ -155,7 +155,7 @@ export default function TournamentsPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="#grand-baie" className="btn-shell">Grand Baie Circuit</Link>
               <Link href="#black-river" className="btn-shell">Black River Circuit</Link>
-              <Link href="/tournaments/2026-urban-calendar.pdf" className="btn-premium">Open 2026 Calendar</Link>
+              <Link href="/downloads/urban-sport-2026-calendar.pdf" className="btn-premium">Open 2026 Calendar</Link>
             </div>
           </div>
 
