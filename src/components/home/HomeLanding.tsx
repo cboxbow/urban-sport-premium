@@ -121,8 +121,8 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
           <div className="hero-grain absolute inset-0 opacity-[0.06]" />
         </div>
 
-        <div className="page-container relative z-10 grid min-h-screen gap-12 pt-28 pb-16 lg:grid-cols-[minmax(0,760px)_minmax(320px,388px)] lg:items-center lg:gap-16 lg:pt-32">
-          <div className="max-w-[760px] lg:self-start lg:pt-20 xl:pt-24">
+        <div className="page-container relative z-10 flex min-h-screen items-center justify-center pt-28 pb-16 lg:pt-32">
+          <div className="mx-auto flex max-w-[900px] flex-col items-center text-center">
             <motion.div
               initial={reduceMotion ? false : 'hidden'}
               animate={reduceMotion ? undefined : 'show'}
@@ -138,7 +138,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               animate={reduceMotion ? undefined : 'show'}
               variants={heroItem}
               custom={0.22}
-              className="mt-5 max-w-[760px] font-home-display text-[clamp(48px,6vw,92px)] uppercase leading-[1.01] tracking-[0.025em] text-white"
+              className="mt-5 max-w-[860px] text-center font-home-display text-[clamp(48px,6vw,92px)] uppercase leading-[1.01] tracking-[0.025em] text-white"
             >
               The Original Padel Clubs in Mauritius
             </motion.h1>
@@ -148,9 +148,9 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               animate={reduceMotion ? undefined : 'show'}
               variants={heroItem}
               custom={0.42}
-              className="mt-6 max-w-[540px]"
+              className="mt-6 max-w-[620px]"
             >
-              <p className="text-[15px] leading-8 text-white/82 sm:text-base">
+              <p className="text-center text-[15px] leading-8 text-white/82 sm:text-base">
                 Two destinations. One standard. Built for play, community, and a premium club experience.
               </p>
             </motion.div>
@@ -160,7 +160,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               animate={reduceMotion ? undefined : 'show'}
               variants={heroItem}
               custom={0.58}
-              className="mt-8 flex flex-wrap gap-3"
+              className="mt-8 flex flex-wrap justify-center gap-3"
             >
               <Link href="/booking" className="btn-premium">
                 Book Now
@@ -179,44 +179,6 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
                 {muted ? 'Sound Off' : 'Sound On'}
               </button>
             </motion.div>
-          </div>
-
-          <div className="grid gap-4 lg:self-end lg:pb-10">
-            {activeClubs.map((club, index) => (
-              <motion.article
-                key={club.id}
-                initial={reduceMotion ? false : 'hidden'}
-                animate={reduceMotion ? undefined : 'show'}
-                variants={heroItem}
-                custom={0.72 + index * 0.12}
-                className="group premium-media-card border-white/12 bg-black/34 backdrop-blur-xl"
-              >
-                <div className="grid min-h-[252px] gap-0 md:grid-cols-[0.47fr_0.53fr]">
-                  <div className="relative overflow-hidden">
-                    <Image
-                      src={club.heroImage}
-                      alt={club.name}
-                      fill
-                      className="object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.06]"
-                    />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,11,11,0.08),rgba(11,11,11,0.58))]" />
-                  </div>
-                  <div className="p-5 lg:p-6">
-                    <div className="text-xs uppercase tracking-[0.24em] text-[#c9a24a]">
-                      {club.slug === 'grand-baie' ? 'Grand Baie' : 'Black River'}
-                    </div>
-                    <h2 className="mt-3 font-home-display text-[29px] uppercase leading-[1.02] tracking-[0.04em] text-white">
-                      {club.slug === 'grand-baie' ? 'Social Club' : 'Destination Venue'}
-                    </h2>
-                    <p className="mt-3 text-sm leading-7 text-white/64">{club.shortDescription}</p>
-                    <div className="mt-4 text-[11px] uppercase tracking-[0.16em] text-white/45">{getClubDisplayLine(club)}</div>
-                    <Link href={`/clubs/${club.slug}`} className="btn-shell mt-5 inline-flex border-[#c9a24a]/18 hover:border-[#c9a24a]/34">
-                      Explore Club
-                    </Link>
-                  </div>
-                </div>
-              </motion.article>
-            ))}
           </div>
         </div>
       </section>

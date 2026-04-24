@@ -42,10 +42,18 @@ const PARTNER_LOGO_RAIL = [
     id: 'padel-house',
     src: '/partners/padel-house.png',
     alt: 'Padel House',
-    width: 180,
+    width: 280,
     height: 60,
   },
 ];
+
+const PRIMARY_PARTNER_LOGOS = PARTNER_LOGO_RAIL.filter((logo) =>
+  ['mpl-msra', 'afrasia'].includes(logo.id)
+);
+
+const SECONDARY_PARTNER_LOGOS = PARTNER_LOGO_RAIL.filter((logo) =>
+  ['dove', 'heineken', 'weaver-fintech', 'padel-house'].includes(logo.id)
+);
 
 export default async function SiteFooter() {
   const { settings, clubs } = await getFooterData();
@@ -82,27 +90,48 @@ export default async function SiteFooter() {
               Instagram
             </Link>
           </div>
-          <div className="flex flex-wrap items-center gap-x-7 gap-y-5">
-            {PARTNER_LOGO_RAIL.map((logo) => (
-              <div
-                key={logo.id}
-                className={`flex items-center justify-center px-1 py-1 transition-all duration-300 hover:-translate-y-0.5 ${
-                  logo.id === 'mpl-msra' ? 'min-h-[86px]' : 'min-h-[68px]'
-                }`}
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={logo.width}
-                  height={logo.height}
-                  className={`h-auto w-auto transition-all duration-300 hover:opacity-100 ${
-                    logo.id === 'mpl-msra'
-                      ? 'max-h-[72px] opacity-95'
-                      : 'max-h-[52px] opacity-88'
+          <div className="space-y-5">
+            <div className="flex flex-wrap items-center gap-x-7 gap-y-5">
+              {PRIMARY_PARTNER_LOGOS.map((logo) => (
+                <div
+                  key={logo.id}
+                  className={`flex items-center justify-center px-1 py-1 transition-all duration-300 hover:-translate-y-0.5 ${
+                    logo.id === 'mpl-msra' ? 'min-h-[86px]' : 'min-h-[68px]'
                   }`}
-                />
-              </div>
-            ))}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className={`h-auto w-auto transition-all duration-300 hover:opacity-100 ${
+                      logo.id === 'mpl-msra'
+                        ? 'max-h-[72px] opacity-95'
+                        : 'max-h-[52px] opacity-88'
+                    }`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-4 items-center gap-x-6 gap-y-4">
+              {SECONDARY_PARTNER_LOGOS.map((logo) => (
+                <div
+                  key={logo.id}
+                  className="flex min-h-[68px] items-center justify-center px-1 py-1 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className={`h-auto w-auto opacity-88 transition-all duration-300 hover:opacity-100 ${
+                      logo.id === 'padel-house' ? 'max-h-[60px]' : 'max-h-[52px]'
+                    }`}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
