@@ -1,27 +1,5 @@
 [
   {
-    "id": "gallery-grand-baie-aerial",
-    "title": "Grand Baie aerial",
-    "category": "clubs",
-    "image": "/gallery/grand-baie-aerial.jpeg",
-    "description": "Real club image used as a permanent venue asset.",
-    "clubSlug": "grand-baie",
-    "tournamentSlug": null,
-    "isPublished": true,
-    "isFeatured": true
-  },
-  {
-    "id": "gallery-black-river-aerial",
-    "title": "Black River aerial",
-    "category": "clubs",
-    "image": "/gallery/black-river-aerial.jpeg",
-    "description": "Real venue image with strong west-coast storytelling value.",
-    "clubSlug": "black-river",
-    "tournamentSlug": null,
-    "isPublished": true,
-    "isFeatured": true
-  },
-  {
     "id": "gallery-urban-team-four",
     "title": "Urban team portrait",
     "category": "clubs",
@@ -50,17 +28,6 @@
     "image": "/gallery/players/friendly-court-pose.jpg",
     "description": "Social court moment with a lighter club atmosphere and player personality.",
     "clubSlug": null,
-    "tournamentSlug": null,
-    "isPublished": true,
-    "isFeatured": false
-  },
-  {
-    "id": "gallery-black-river-overlook",
-    "title": "Black River overlook",
-    "category": "clubs",
-    "image": "/gallery/players/black-river-overlook.jpeg",
-    "description": "Elevated club view showing the full Black River footprint and destination setting.",
-    "clubSlug": "black-river",
     "tournamentSlug": null,
     "isPublished": true,
     "isFeatured": false
@@ -171,39 +138,6 @@
     "image": "/gallery/players/ghost-padel-neon-line.jpeg",
     "description": "Night event lineup with stronger fluorescent visuals and player detail.",
     "clubSlug": "grand-baie",
-    "tournamentSlug": null,
-    "isPublished": true,
-    "isFeatured": false
-  },
-  {
-    "id": "gallery-season-calendar",
-    "title": "2026 season calendar",
-    "category": "events",
-    "image": "/gallery/season-calendar.jpeg",
-    "description": "Supports archive storytelling and season navigation.",
-    "clubSlug": null,
-    "tournamentSlug": null,
-    "isPublished": true,
-    "isFeatured": false
-  },
-  {
-    "id": "gallery-black-river-poster-board",
-    "title": "Black River poster board",
-    "category": "events",
-    "image": "/gallery/black-river-poster-board.jpeg",
-    "description": "Poster-led event context used to support the season archive.",
-    "clubSlug": "black-river",
-    "tournamentSlug": null,
-    "isPublished": true,
-    "isFeatured": false
-  },
-  {
-    "id": "gallery-academy-coaching",
-    "title": "Academy coaching",
-    "category": "campaigns",
-    "image": "/gallery/academy-coaching.jpeg",
-    "description": "Campaign-led coaching visual used in the curated media library.",
-    "clubSlug": null,
     "tournamentSlug": null,
     "isPublished": true,
     "isFeatured": false

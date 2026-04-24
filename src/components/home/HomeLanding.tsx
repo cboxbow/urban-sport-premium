@@ -121,7 +121,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
           <div className="hero-grain absolute inset-0 opacity-[0.06]" />
         </div>
 
-        <div className="page-container relative z-10 flex min-h-screen items-center justify-center pt-28 pb-16 lg:pt-32">
+        <div className="page-container relative z-10 flex min-h-screen items-center justify-center pt-32 pb-16 sm:pt-36 lg:pt-32">
           <div className="mx-auto flex max-w-[900px] flex-col items-center text-center">
             <motion.div
               initial={reduceMotion ? false : 'hidden'}
@@ -138,7 +138,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               animate={reduceMotion ? undefined : 'show'}
               variants={heroItem}
               custom={0.22}
-              className="mt-5 max-w-[860px] text-center font-home-display text-[clamp(48px,6vw,92px)] uppercase leading-[1.01] tracking-[0.025em] text-white"
+              className="mt-5 max-w-[860px] text-center font-home-display text-[clamp(34px,6vw,92px)] uppercase leading-[0.98] tracking-[0.02em] text-white sm:text-[clamp(48px,6vw,92px)]"
             >
               The Original Padel Clubs in Mauritius
             </motion.h1>
@@ -150,7 +150,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               custom={0.42}
               className="mt-6 max-w-[620px]"
             >
-              <p className="text-center text-[15px] leading-8 text-white/82 sm:text-base">
+              <p className="text-center text-[14px] leading-7 text-white/84 sm:text-base sm:leading-8">
                 Two destinations. One standard. Built for play, community, and a premium club experience.
               </p>
             </motion.div>
@@ -160,18 +160,18 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               animate={reduceMotion ? undefined : 'show'}
               variants={heroItem}
               custom={0.58}
-              className="mt-8 flex flex-wrap justify-center gap-3"
+              className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row sm:flex-wrap"
             >
-              <Link href="/booking" className="btn-premium">
+              <Link href="/booking" className="btn-premium w-full justify-center sm:w-auto">
                 Book Now
               </Link>
-              <Link href="/clubs" className="btn-outline">
+              <Link href="/clubs" className="btn-outline w-full justify-center sm:w-auto">
                 Explore Clubs
               </Link>
               <button
                 type="button"
                 onClick={toggleSound}
-                className="btn-shell"
+                className="btn-shell w-full justify-center sm:w-auto"
                 aria-pressed={!muted}
                 aria-label={muted ? 'Enable hero video sound' : 'Mute hero video sound'}
               >

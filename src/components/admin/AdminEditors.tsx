@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import type {
@@ -217,6 +218,15 @@ export function AdminLoginForm() {
         >
           {loading ? 'Signing in...' : 'Enter admin'}
         </button>
+        <div className="mt-5 flex items-center justify-center gap-4 text-xs uppercase tracking-[0.2em] text-white/45">
+          <Link href="/" className="transition-colors hover:text-white">
+            Return to homepage
+          </Link>
+          <span className="text-white/20">|</span>
+          <Link href="/clubs" className="transition-colors hover:text-white">
+            View clubs
+          </Link>
+        </div>
       </div>
     </div>
   );

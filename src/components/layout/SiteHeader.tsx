@@ -35,6 +35,13 @@ export default function SiteHeader() {
     setOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open]);
+
   return (
     <header
       className={cn(
@@ -120,23 +127,37 @@ export default function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-black/96 xl:hidden">
-          <div className="page-container flex flex-col gap-2 py-4">
-            {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-2xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm uppercase tracking-[0.18em] text-white/78"
-              >
-                {item.label}
-              </Link>
-            ))}
-            <div className="mt-2 grid grid-cols-2 gap-3">
+        <div className="fixed inset-0 top-[92px] z-40 bg-black/94 backdrop-blur-2xl xl:hidden">
+          <div className="page-container flex h-full flex-col pb-safe pt-4">
+            <nav className="grid gap-3">
+              {NAV_ITEMS.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    'rounded-[1.35rem] border px-5 py-4 text-sm uppercase tracking-[0.22em] transition-colors',
+                    pathname === item.href || pathname.startsWith(`${item.href}/`)
+                      ? 'border-[#ffb300]/30 bg-[#ffb300]/10 text-[#ffb300]'
+                      : 'border-white/10 bg-white/[0.03] text-white/82 hover:border-white/20 hover:text-white'
+                  )}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="mt-auto grid gap-3 py-6">
               <Link href="/login" className="btn-shell justify-center">
                 Login
               </Link>
               <Link href="/booking" className="btn-premium justify-center">
                 Book Now
+              </Link>
+              <Link
+                href="/"
+                className="justify-center rounded-2xl border border-white/10 px-5 py-3 text-center text-xs uppercase tracking-[0.2em] text-white/50 transition-colors hover:border-white/20 hover:text-white"
+              >
+                Return Home
               </Link>
             </div>
           </div>
