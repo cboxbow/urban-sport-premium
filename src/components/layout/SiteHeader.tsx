@@ -127,8 +127,13 @@ export default function SiteHeader() {
       </div>
 
       {open && (
-        <div className="fixed inset-0 top-[92px] z-40 bg-black/94 backdrop-blur-2xl xl:hidden">
-          <div className="page-container flex h-full flex-col pb-safe pt-4">
+        <div
+          className={cn(
+            'fixed inset-0 z-40 xl:hidden',
+            isHome ? 'bg-black/98 backdrop-blur-xl' : 'bg-black/95 backdrop-blur-2xl'
+          )}
+        >
+          <div className="page-container flex h-full flex-col pb-safe pt-[6.5rem]">
             <nav className="grid gap-3">
               {NAV_ITEMS.map((item) => (
                 <Link
@@ -138,7 +143,7 @@ export default function SiteHeader() {
                     'rounded-[1.35rem] border px-5 py-4 text-sm uppercase tracking-[0.22em] transition-colors',
                     pathname === item.href || pathname.startsWith(`${item.href}/`)
                       ? 'border-[#ffb300]/30 bg-[#ffb300]/10 text-[#ffb300]'
-                      : 'border-white/10 bg-white/[0.03] text-white/82 hover:border-white/20 hover:text-white'
+                      : 'border-white/10 bg-black/80 text-white/82 hover:border-white/20 hover:text-white'
                   )}
                 >
                   {item.label}
