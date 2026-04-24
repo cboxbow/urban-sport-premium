@@ -74,7 +74,7 @@ export default function SiteHeader() {
           <div className="hidden min-w-0 flex-1 items-center justify-center xl:flex">
             <nav
               className={cn(
-                'flex min-w-0 flex-wrap items-center justify-center gap-x-5 gap-y-2 rounded-full px-5 py-3 transition-all duration-300',
+                'flex min-w-0 flex-nowrap items-center justify-center gap-4 rounded-full px-4 py-3 transition-all duration-300',
                 isHome ? 'border border-white/10 bg-white/[0.04]' : 'border border-white/10 bg-white/[0.035]'
               )}
             >
@@ -85,7 +85,7 @@ export default function SiteHeader() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      'text-[12px] uppercase tracking-[0.18em] text-white/70 transition-all duration-300 hover:text-white',
+                      'whitespace-nowrap text-[11px] uppercase tracking-[0.14em] text-white/70 transition-all duration-300 hover:text-white',
                       active && 'text-[#d4af37] [text-shadow:0_0_18px_rgba(201,168,76,0.2)]'
                     )}
                   >
