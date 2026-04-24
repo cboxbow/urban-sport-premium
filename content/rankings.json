@@ -1,0 +1,7 @@
+[
+  { "id": "rank-1", "name": "A. Rousset", "club": "Grand Baie", "matches": 18, "wins": 13, "losses": 5, "points": 420 },
+  { "id": "rank-2", "name": "M. Lefebvre", "club": "Black River", "matches": 22, "wins": 15, "losses": 7, "points": 398 },
+  { "id": "rank-3", "name": "S. Naidoo", "club": "Grand Baie", "matches": 16, "wins": 11, "losses": 5, "points": 356 },
+  { "id": "rank-4", "name": "D. Bholah", "club": "Black River", "matches": 20, "wins": 11, "losses": 9, "points": 334 },
+  { "id": "rank-5", "name": "K. Ramchurn", "club": "Grand Baie", "matches": 14, "wins": 9, "losses": 5, "points": 298 }
+]

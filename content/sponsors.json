@@ -1,0 +1,62 @@
+{
+  "intro": "Urban Sport is positioned as a sponsor-ready platform with premium club visibility, tournament cadence, and year-round digital presence.",
+  "featureHeading": "Premium visibility",
+  "featureCopy": "Urban Sport combines club discovery, event hosting, tournament circulation, and community-led brand moments. Partnership visibility scales from campaign moments to season-long presence.",
+  "metrics": [
+    { "value": "7", "label": "Courts" },
+    { "value": "2", "label": "Clubs" },
+    { "value": "14+", "label": "Season events" },
+    { "value": "Multi-touch", "label": "Digital + onsite reach" }
+  ],
+  "tiers": [
+    {
+      "id": "tier-title",
+      "name": "Title tier",
+      "description": "Calendar naming rights, major event presence, and premium homepage visibility."
+    },
+    {
+      "id": "tier-official",
+      "name": "Official tier",
+      "description": "Tournament support, venue visibility, draw-stage branding, and member touchpoints."
+    },
+    {
+      "id": "tier-community",
+      "name": "Community tier",
+      "description": "Grassroots presence, academy support, and event-linked campaign slots."
+    }
+  ],
+  "partners": [
+    {
+      "id": "partner-msra",
+      "name": "Mauritius Squash Rackets Association",
+      "tier": "Official tier",
+      "logoPath": "",
+      "website": "",
+      "description": "Sport ecosystem partner."
+    },
+    {
+      "id": "partner-mpl",
+      "name": "Mauritius Padel League",
+      "tier": "Official tier",
+      "logoPath": "",
+      "website": "",
+      "description": "Competition-linked partner."
+    },
+    {
+      "id": "partner-afrasia",
+      "name": "Afrasia Bank Padel League",
+      "tier": "Title tier",
+      "logoPath": "",
+      "website": "",
+      "description": "Premium exposure partner."
+    },
+    {
+      "id": "partner-padel-house",
+      "name": "Padel House",
+      "tier": "Community tier",
+      "logoPath": "",
+      "website": "",
+      "description": "Category-aligned brand partner."
+    }
+  ]
+}

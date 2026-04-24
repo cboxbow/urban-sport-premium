@@ -1,0 +1,18 @@
+{
+  "intro": "Urban Sport merchandise carries the same black-and-gold identity as the clubs, with custom name application and sponsor-backed tournament styling.",
+  "orderIntro": "Orders are handled directly on WhatsApp so the club team can confirm names, sizes, and final pickup details without friction.",
+  "whatsappOrderLink": "https://wa.me/23057725704",
+  "items": [
+    {
+      "id": "shop-tournament-pack",
+      "name": "Tournament T-Shirt Pack",
+      "price": "Rs 2500",
+      "description": "A two-shirt package built around the Urban Sport tournament apparel system shown in the source poster.",
+      "image": "/marketing/tournament-apparel-sale.png",
+      "customization": "With the name of your choice",
+      "orderChannel": "WhatsApp Cynthia on +230 5 772-5704",
+      "tags": ["2 t-shirts", "black or white colourways", "custom name"],
+      "isFeatured": true
+    }
+  ]
+}

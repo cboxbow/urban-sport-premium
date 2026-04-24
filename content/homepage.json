@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "badge": "Urban Sport Mauritius",
+    "title": "The Original Padel Clubs in Mauritius",
+    "subtitle": "Two destinations. One standard. Built for daily play, community, and premium experience.",
+    "primaryCtaLabel": "Book Now",
+    "primaryCtaHref": "/booking",
+    "secondaryCtaLabel": "Explore Clubs",
+    "secondaryCtaHref": "/clubs"
+  },
+  "stats": [
+    { "value": "2", "label": "Club locations" },
+    { "value": "7", "label": "Padel courts" },
+    { "value": "2", "label": "Coastlines" },
+    { "value": "Daily", "label": "Club rhythm" }
+  ],
+  "featuredBlocks": [
+    {
+      "eyebrow": "Grand Baie",
+      "title": "Daily play by the north coast",
+      "meta": "Social sessions and accessible club rhythm",
+      "description": "Urban Sport Grand Baie brings players together through a compact club setup designed for repeat play and community flow.",
+      "ctaLabel": "Explore club",
+      "ctaHref": "/clubs/grand-baie"
+    },
+    {
+      "eyebrow": "Black River",
+      "title": "Destination venue",
+      "meta": "4 padel courts and 1 foot five",
+      "description": "The west-coast venue brings more scale, stronger event potential, and a broader destination feel to the Urban Sport experience.",
+      "ctaLabel": "Explore club",
+      "ctaHref": "/clubs/black-river"
+    }
+  ],
+  "sectionToggles": {
+    "showBooking": true,
+    "showClubs": true,
+    "showTournaments": false,
+    "showRankings": false,
+    "showSponsors": false
+  },
+  "membershipFaq": [
+    {
+      "question": "Can I book without a membership?",
+      "answer": "Yes. Membership improves pricing, access, and priority, but public booking requests remain available."
+    },
+    {
+      "question": "Do plans work across both clubs?",
+      "answer": "Premium and Elite are positioned as cross-club products for players who move between Grand Baie and Black River."
+    },
+    {
+      "question": "How are tournaments handled?",
+      "answer": "Priority access and member advantages can be managed locally by the club team through the admin panel."
+    }
+  ]
+}

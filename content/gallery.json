@@ -1,0 +1,57 @@
+[
+  {
+    "id": "gallery-grand-baie-aerial",
+    "title": "Grand Baie aerial",
+    "category": "clubs",
+    "image": "/gallery/grand-baie-aerial.jpeg",
+    "description": "Real club image used as a permanent venue asset.",
+    "clubSlug": "grand-baie",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": true
+  },
+  {
+    "id": "gallery-black-river-aerial",
+    "title": "Black River aerial",
+    "category": "clubs",
+    "image": "/gallery/black-river-aerial.jpeg",
+    "description": "Real venue image with strong west-coast storytelling value.",
+    "clubSlug": "black-river",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": true
+  },
+  {
+    "id": "gallery-season-calendar",
+    "title": "2026 season calendar",
+    "category": "events",
+    "image": "/gallery/season-calendar.jpeg",
+    "description": "Supports archive storytelling and season navigation.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-black-river-poster-board",
+    "title": "Black River poster board",
+    "category": "events",
+    "image": "/gallery/black-river-poster-board.jpeg",
+    "description": "Poster-led event context used to support the season archive.",
+    "clubSlug": "black-river",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-academy-coaching",
+    "title": "Academy coaching",
+    "category": "campaigns",
+    "image": "/gallery/academy-coaching.jpeg",
+    "description": "Campaign-led coaching visual used in the curated media library.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "intro": "Urban Sport blends premium club play with branded experiences that feel social, visual, and easy to book for groups, families, and special sessions.",
+  "benefits": [
+    "Real club environments instead of rented generic venues",
+    "Clear offer structure with actual source-poster details",
+    "Fast contact routes for booking and event confirmation"
+  ],
+  "items": [
+    {
+      "id": "experience-ghost-padel",
+      "title": "Ghost Padel",
+      "shortLabel": "Night format",
+      "description": "A blacklight padel experience designed as a high-energy club activation rather than a standard court booking.",
+      "location": "Grand Baie, court 2 or court 3",
+      "timeLabel": "18:00-19:30 or 19:30-21:00",
+      "priceLabel": "Rs 3000 for 90 min",
+      "contactLabel": "Cynthia on 268 2942 from 8 AM till 4 PM",
+      "image": "/marketing/ghost-padel-grand-baie.png",
+      "ctaLabel": "Request booking",
+      "ctaHref": "/booking"
+    },
+    {
+      "id": "experience-kids-birthday",
+      "title": "Kids Birthday",
+      "shortLabel": "Family format",
+      "description": "A ready-made kids party setup with foot five access, add-on food and drinks, and optional inflatable extras on request.",
+      "location": "Urban Sport venue booking",
+      "timeLabel": "Available everyday 10 AM till 4:30 PM, except Sundays from 10 AM till 4:30 PM",
+      "priceLabel": "Foot 5 Rs 1500 per hour, food package Rs 250 per kid, jumping castle or waterslide Rs 4000 on request",
+      "contactLabel": "Booking on +230 5944 9474",
+      "image": "/marketing/kids-birthday.png",
+      "ctaLabel": "Plan a birthday",
+      "ctaHref": "/events"
+    },
+    {
+      "id": "experience-private-events",
+      "title": "Private and Corporate Events",
+      "shortLabel": "Club hire",
+      "description": "Use the Urban Sport venues for premium private sessions, sponsor hospitality, or structured team formats with club support.",
+      "location": "Grand Baie and Black River",
+      "timeLabel": "Built around your preferred date and format",
+      "priceLabel": "Proposal-based pricing",
+      "contactLabel": "Submit an event brief through the inquiry flow",
+      "image": "/clubs/black-river/black-river-aerial-master.png",
+      "ctaLabel": "Open event inquiry",
+      "ctaHref": "/events"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "brand": {
+    "primaryDark": "/logos/urban-sport-primary-dark.png",
+    "primaryLight": "/logos/urban-sport-primary-light.png",
+    "compactDark": "/logos/urban-sport-compact-dark.png",
+    "compactLight": "/logos/urban-sport-compact-light.png",
+    "masterVectorSources": [
+      "/branding/urban-sport-master-inverted.ai",
+      "/branding/urban-sport-master-inverted.eps",
+      "/branding/urban-sport-master.eps"
+    ]
+  },
+  "clubs": {
+    "grandBaie": [
+      "/clubs/grand-baie/grand-baie-aerial.jpeg"
+    ],
+    "blackRiver": [
+      "/clubs/black-river/black-river-aerial-master.png",
+      "/clubs/black-river/black-river-aerial.jpeg",
+      "/clubs/black-river/black-river-reel.mp4"
+    ]
+  },
+  "coaching": {
+    "serviceAssets": [
+      "/gallery/academy-coaching.jpeg",
+      "/gallery/padel-level-guide.jpeg"
+    ]
+  },
+  "experiences": {
+    "ghostPadel": "/marketing/ghost-padel-grand-baie.png",
+    "kidsBirthday": "/marketing/kids-birthday.png",
+    "eventsSupport": "/gallery/black-river-poster-board.jpeg"
+  },
+  "shop": {
+    "featuredProduct": "/marketing/tournament-apparel-sale.png",
+    "secondaryVisual": "/marketing/tournament-shirt-offer.jpeg"
+  },
+  "tournaments": {
+    "seasonDownload": "/downloads/urban-sport-2026-calendar.pdf",
+    "calendarReference": "/tournaments/season-calendar-board.jpeg",
+    "grandBaiePoster": "/tournaments/grand-baie-season-poster-2026.pdf",
+    "blackRiverPoster": "/tournaments/black-river-season-poster-2026.pdf"
+  },
+  "gallery": [
+    "/gallery/grand-baie-aerial.jpeg",
+    "/gallery/black-river-aerial.jpeg",
+    "/gallery/season-calendar.jpeg",
+    "/gallery/black-river-poster-board.jpeg",
+    "/gallery/academy-coaching.jpeg",
+    "/gallery/padel-level-guide.jpeg"
+  ],
+  "marketingOnly": [
+    "/marketing/app-promo.png",
+    "/marketing/under-20-discount.png",
+    "/marketing/tournament-shirt-offer.jpeg"
+  ]
+}

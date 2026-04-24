@@ -1,0 +1,26 @@
+{
+  "intro": "Urban Sport is positioned as a premium club environment for high-value private and corporate sessions, with a clean inquiry flow and stronger event packaging.",
+  "formIntro": "Tell us about your event and the club team will shape a premium proposal around venue, format, and hospitality.",
+  "benefits": [
+    "Premium venue environment with club-level hospitality",
+    "Structured event programming from social rounds to sponsor activations",
+    "Brand exposure through tournaments, digital placement, and venue presence"
+  ],
+  "eventTypes": [
+    {
+      "id": "event-corporate",
+      "title": "Corporate",
+      "description": "Team days, sponsor activations, and hospitality-led court programming."
+    },
+    {
+      "id": "event-private",
+      "title": "Private",
+      "description": "Premium social sessions, birthdays, and curated club takeovers."
+    },
+    {
+      "id": "event-team-building",
+      "title": "Team Building",
+      "description": "Structured rounds, coaching touchpoints, and branded experiences across both sites."
+    }
+  ]
+}

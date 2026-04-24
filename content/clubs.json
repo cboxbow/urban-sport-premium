@@ -1,0 +1,52 @@
+[
+  {
+    "id": "club-grand-baie",
+    "name": "Urban Sport Grand Baie",
+    "slug": "grand-baie",
+    "region": "North Mauritius",
+    "shortDescription": "Fast access, premium social play, and a compact north-side club rhythm.",
+    "description": "Grand Baie anchors the Urban Sport circuit with a premium footprint, strong weekday demand, and a season structure that supports both social and competitive play.",
+    "phone": "268 2942",
+    "address": "Grand Baie, Mauritius",
+    "heroImage": "/clubs/grand-baie/urban-gb-top-view.jpg",
+    "galleryImages": [
+      "/clubs/grand-baie/urban-gb-top-view.jpg",
+      "/gallery/grand-baie-calendar.jpeg",
+      "/marketing/ghost-padel-grand-baie.png"
+    ],
+    "highlights": [
+      "3 premium padel courts",
+      "Season-linked community calendar",
+      "Strong evening and weekend club demand"
+    ],
+    "courtCount": 3,
+    "footFiveCount": 0,
+    "tags": ["premium", "north", "community", "tournaments"],
+    "isActive": true
+  },
+  {
+    "id": "club-black-river",
+    "name": "Urban Sport Black River",
+    "slug": "black-river",
+    "region": "West Mauritius",
+    "shortDescription": "A larger event footprint built for premium club sessions and sponsor-ready activations.",
+    "description": "Black River is the broader competition venue in the Urban Sport ecosystem, backed by stronger event visuals, bigger event energy, and the most expansive venue footprint in the source material.",
+    "phone": "484 5336",
+    "address": "Black River, Mauritius",
+    "heroImage": "/clubs/black-river/black-river-aerial-master.png",
+    "galleryImages": [
+      "/clubs/black-river/black-river-aerial-master.png",
+      "/gallery/black-river-poster-board.jpeg",
+      "/gallery/season-calendar.jpeg"
+    ],
+    "highlights": [
+      "4 padel courts and 1 foot five",
+      "Best suited for events and tournament staging",
+      "Strong west-coast destination feel"
+    ],
+    "courtCount": 4,
+    "footFiveCount": 1,
+    "tags": ["premium", "west", "events", "sponsors"],
+    "isActive": true
+  }
+]

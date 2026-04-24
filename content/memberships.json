@@ -1,0 +1,53 @@
+[
+  {
+    "id": "membership-basic",
+    "name": "Basic",
+    "tier": "basic",
+    "price": "Rs 1,500",
+    "period": "month",
+    "description": "A simple monthly option for regular local play.",
+    "features": [
+      "Off-peak booking access",
+      "Member pricing on selected club slots",
+      "Access to tournaments calendar and club notices",
+      "Priority on community event waiting lists"
+    ],
+    "isHighlighted": false,
+    "ctaLabel": "Choose Basic",
+    "isActive": true
+  },
+  {
+    "id": "membership-premium",
+    "name": "Premium",
+    "tier": "premium",
+    "price": "Rs 3,500",
+    "period": "month",
+    "description": "Designed for players who book often and move between club sessions and events.",
+    "features": [
+      "Extended booking window",
+      "Preferred pricing across both clubs",
+      "Priority registration for featured tournaments",
+      "Selected academy and event perks"
+    ],
+    "isHighlighted": true,
+    "ctaLabel": "Choose Premium",
+    "isActive": true
+  },
+  {
+    "id": "membership-elite",
+    "name": "Elite",
+    "tier": "elite",
+    "price": "Rs 7,500",
+    "period": "month",
+    "description": "A fuller club-access formula for players who want priority support and broader access.",
+    "features": [
+      "Highest booking priority",
+      "Concierge support for bookings and events",
+      "VIP sponsor and corporate access",
+      "Premium tournament and hospitality treatment"
+    ],
+    "isHighlighted": false,
+    "ctaLabel": "Choose Elite",
+    "isActive": true
+  }
+]

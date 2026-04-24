@@ -1,0 +1,13 @@
+{
+  "intro": "Urban Sport runs as a club-first ecosystem with a season rhythm across Grand Baie and Black River rather than a standalone tournament brand.",
+  "description": "The league layer helps players understand where weekly club play, archive-backed tournaments, and progression all connect. It supports the season calendar while keeping club identity first.",
+  "seasonLabel": "2026 club season",
+  "image": "/tournaments/season-calendar-board.jpeg",
+  "highlights": [
+    "Season archive across both clubs",
+    "Category mix spanning M25, M50, M100, M250, mixed, and junior formats",
+    "Progression from club sessions into competition touchpoints"
+  ],
+  "ctaLabel": "Explore tournaments",
+  "ctaHref": "/tournaments"
+}

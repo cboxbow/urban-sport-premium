@@ -1,0 +1,33 @@
+{
+  "siteTitle": "Urban Sport Premium",
+  "siteDescription": "A premium dark-first padel platform for Urban Sport Mauritius with local content management.",
+  "logoPrimary": "/logos/urban-sport-primary-dark.png",
+  "logoCompact": "/logos/urban-sport-compact-dark.png",
+  "faviconPath": "/icon.png",
+  "contactEmail": "hello@urbansport.mu",
+  "contactPhone": "+230 268 2942",
+  "socialLinks": {
+    "instagram": "https://instagram.com/urbansport",
+    "facebook": "https://facebook.com/urbansport",
+    "whatsapp": "https://wa.me/2302682942"
+  },
+  "seoDefaults": {
+    "title": "Urban Sport Premium",
+    "description": "Premium club discovery, booking requests, tournaments, membership, gallery, events, sponsors, and local admin operations."
+  },
+  "footer": {
+    "headline": "Urban Sport is a premium padel destination in Mauritius, built around club discovery, booking requests, tournament storytelling, sponsor visibility, and a scalable digital club ecosystem.",
+    "tagline": "Locally managed premium sports platform",
+    "copyright": "Urban Sport Premium"
+  },
+  "buttonLabels": {
+    "bookNow": "Book Now",
+    "exploreClub": "Explore Club",
+    "viewTournament": "View Tournament"
+  },
+  "theme": {
+    "primary": "#d4af37",
+    "background": "#050505",
+    "surface": "#0a0a0a"
+  }
+}
