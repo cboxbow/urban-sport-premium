@@ -51,7 +51,7 @@ export default function LeaguePage() {
       <section className="page-container pb-14">
         <div className="grid gap-8 xl:grid-cols-[0.92fr_1.08fr] xl:items-end">
           <div>
-            <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">Season guide</div>
+            <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Season guide</div>
             <h1 className="mt-4 font-display text-5xl uppercase tracking-[0.08em] sm:text-6xl">
               How the Urban Sport season works
             </h1>
@@ -76,7 +76,7 @@ export default function LeaguePage() {
               <Image src="/tournaments/season/urban-2026-calendar.jpeg" alt="Urban Sport 2026 season calendar" fill className="object-cover" />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.18)_55%,rgba(0,0,0,0.82))]" />
               <div className="absolute bottom-0 left-0 p-6">
-                <div className="text-xs uppercase tracking-[0.22em] text-[#d4af37]">2026 season overview</div>
+                <div className="text-xs uppercase tracking-[0.22em] text-[#ffb300]">2026 season overview</div>
                 <p className="mt-3 max-w-xl text-sm leading-7 text-white/68">
                   One calendar board shows both clubs side by side. This is the clearest way to read the season as one ecosystem with two distinct venues inside the wider Mauritius Padel League context.
                 </p>
@@ -90,7 +90,7 @@ export default function LeaguePage() {
         <div className="grid gap-6 lg:grid-cols-3">
           {SEASON_PILLARS.map((item) => (
             <article key={item.title} className="surface-panel p-6 lg:p-7">
-              <div className="text-xs uppercase tracking-[0.22em] text-[#d4af37]">{item.title}</div>
+              <div className="text-xs uppercase tracking-[0.22em] text-[#ffb300]">{item.title}</div>
               <p className="mt-4 text-sm leading-8 text-white/64">{item.description}</p>
             </article>
           ))}
@@ -99,7 +99,7 @@ export default function LeaguePage() {
 
       <section className="page-container pb-20">
         <div className="mb-8">
-          <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">By club</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">By club</div>
           <h2 className="mt-3 font-display text-5xl uppercase tracking-[0.08em] text-white sm:text-6xl">
             Two seasons, one Urban Sport standard
           </h2>
@@ -112,7 +112,7 @@ export default function LeaguePage() {
                 <Image src={club.image} alt={`${club.name} season poster`} fill className="object-cover" />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.18)_52%,rgba(0,0,0,0.82))]" />
                 <div className="absolute bottom-0 left-0 p-6">
-                  <div className="text-xs uppercase tracking-[0.22em] text-[#d4af37]">{club.role}</div>
+                  <div className="text-xs uppercase tracking-[0.22em] text-[#ffb300]">{club.role}</div>
                   <h3 className="mt-3 font-display text-4xl uppercase tracking-[0.08em] text-white sm:text-5xl">{club.name}</h3>
                 </div>
               </div>

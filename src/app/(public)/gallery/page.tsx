@@ -21,7 +21,7 @@ export default async function GalleryPage({
   return (
     <div className="bg-black pt-28 text-white">
       <section className="page-container pb-10">
-        <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">Gallery</div>
+        <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Gallery</div>
         <h1 className="mt-4 font-display text-5xl uppercase tracking-[0.08em] sm:text-6xl">Clubs first</h1>
         <p className="mt-5 max-w-3xl text-sm leading-7 text-white/60">
           Club visuals come first, followed by event storytelling, then campaign material. The gallery stays structured and avoids poster overload.
@@ -35,7 +35,7 @@ export default async function GalleryPage({
             href={`/gallery?filter=${item.value}`}
             className={cn(
               'rounded-full border px-4 py-2 text-xs uppercase tracking-[0.18em]',
-              filter === item.value ? 'border-[#d4af37]/30 bg-[#d4af37]/10 text-[#d4af37]' : 'border-white/10 text-white/48'
+              filter === item.value ? 'border-[#ffb300]/30 bg-[#ffb300]/10 text-[#ffb300]' : 'border-white/10 text-white/48'
             )}
           >
             {item.label}

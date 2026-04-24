@@ -6,7 +6,7 @@ export default async function AdminBookingRequestsPage() {
   return (
     <div className="admin-page grid gap-6">
       <section className="surface-panel p-6">
-        <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Booking requests</div>
+        <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Booking requests</div>
         <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-white/8">
           <table className="data-table">
             <thead>
@@ -34,7 +34,7 @@ export default async function AdminBookingRequestsPage() {
       </section>
 
       <section className="surface-panel p-6">
-        <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Event inquiries</div>
+        <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Event inquiries</div>
         <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-white/8">
           <table className="data-table">
             <thead>

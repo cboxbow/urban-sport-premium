@@ -10,7 +10,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] opacity-25"
           style={{
             background:
-              'radial-gradient(ellipse, rgba(201,168,76,0.45) 0%, transparent 70%)',
+              'radial-gradient(ellipse, rgba(255,179,0,0.45) 0%, transparent 70%)',
           }}
         />
       </div>

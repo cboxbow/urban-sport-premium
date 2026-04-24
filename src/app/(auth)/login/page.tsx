@@ -17,7 +17,7 @@ export default function LoginPage() {
           priority
         />
 
-        <div className="mt-6 text-xs uppercase tracking-[0.24em] text-[#d4af37]">Private access</div>
+        <div className="mt-6 text-xs uppercase tracking-[0.24em] text-[#ffb300]">Private access</div>
         <h1 className="mt-3 font-display text-3xl uppercase tracking-[0.06em] text-white sm:text-4xl">
           Club management access
         </h1>

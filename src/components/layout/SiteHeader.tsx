@@ -86,7 +86,7 @@ export default function SiteHeader() {
                     href={item.href}
                     className={cn(
                       'whitespace-nowrap text-[11px] uppercase tracking-[0.14em] text-white/70 transition-all duration-300 hover:text-white',
-                      active && 'text-[#d4af37] [text-shadow:0_0_18px_rgba(201,168,76,0.2)]'
+                      active && 'text-[#ffb300] [text-shadow:0_0_18px_rgba(255,179,0,0.2)]'
                     )}
                   >
                     {item.label}
@@ -97,12 +97,12 @@ export default function SiteHeader() {
           </div>
 
           <div className="hidden shrink-0 items-center gap-3 lg:flex">
-            <Link href="/login" className={cn('btn-shell', isHome && 'hover:border-[#c9a24a]/25 hover:text-white')}>
+            <Link href="/login" className={cn('btn-shell', isHome && 'hover:border-[#ffb300]/25 hover:text-white')}>
               Login
             </Link>
             <Link
               href="/booking"
-              className={cn('btn-premium', isHome && 'shadow-[0_12px_30px_rgba(201,168,76,0.24)] hover:shadow-[0_18px_42px_rgba(201,168,76,0.34)]')}
+              className={cn('btn-premium', isHome && 'shadow-[0_12px_30px_rgba(255,179,0,0.24)] hover:shadow-[0_18px_42px_rgba(255,179,0,0.34)]')}
             >
               Book Now
             </Link>

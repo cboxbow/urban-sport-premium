@@ -78,11 +78,11 @@ export default function EventInquiryForm() {
         animate={{ opacity: 1, scale: 1 }}
         className="glass-card-gold rounded-2xl p-10 flex flex-col items-center justify-center gap-5 text-center min-h-[360px]"
       >
-        <div className="w-16 h-16 rounded-full bg-[#C9A84C]/15 flex items-center justify-center ring-2 ring-[#C9A84C]/40">
-          <CheckCircle className="w-8 h-8 text-[#C9A84C]" />
+        <div className="w-16 h-16 rounded-full bg-[#FFB300]/15 flex items-center justify-center ring-2 ring-[#FFB300]/40">
+          <CheckCircle className="w-8 h-8 text-[#FFB300]" />
         </div>
         <div>
-          <p className="text-label text-[#C9A84C] mb-2">REQUEST RECEIVED</p>
+          <p className="text-label text-[#FFB300] mb-2">REQUEST RECEIVED</p>
           <h3 className="heading-card text-white mb-3">Thank You!</h3>
           <p className="text-muted max-w-xs">
             We&apos;ll be in touch within 24 hours to discuss your event and shape a premium proposal.
@@ -118,7 +118,7 @@ export default function EventInquiryForm() {
                   className={cn(
                     'flex flex-col items-center gap-1.5 rounded-xl p-3 border transition-all text-center',
                     inquiryType === value
-                      ? 'border-[#C9A84C] bg-[#C9A84C]/10 text-[#C9A84C]'
+                      ? 'border-[#FFB300] bg-[#FFB300]/10 text-[#FFB300]'
                       : 'border-white/10 bg-white/[0.03] text-white/50 hover:border-white/20 hover:text-white/70'
                   )}
                 >

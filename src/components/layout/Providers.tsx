@@ -28,14 +28,14 @@ export function Providers({ children }: { children: React.ReactNode }) {
           },
           success: {
             iconTheme: {
-              primary:    '#C9A84C',
+              primary:    '#FFB300',
               secondary:  '#0A0A0A',
             },
             style: {
               background: '#161616',
-              border:     '1px solid rgba(201,168,76,0.25)',
+              border:     '1px solid rgba(255,179,0,0.25)',
               boxShadow:
-                '0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.15)',
+                '0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,179,0,0.15)',
             },
           },
           error: {
@@ -52,8 +52,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
           },
           loading: {
             iconTheme: {
-              primary:    'rgba(201,168,76,0.7)',
-              secondary:  'rgba(201,168,76,0.15)',
+              primary:    'rgba(255,179,0,0.7)',
+              secondary:  'rgba(255,179,0,0.15)',
             },
           },
         }}

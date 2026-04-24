@@ -128,7 +128,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               animate={reduceMotion ? undefined : 'show'}
               variants={heroItem}
               custom={0.08}
-              className="text-xs uppercase tracking-[0.28em] text-[#c9a24a]"
+              className="text-xs uppercase tracking-[0.28em] text-[#ffb300]"
             >
               Urban Sport Mauritius
             </motion.div>
@@ -186,7 +186,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
       <section className="section-py">
         <div className="page-container">
           <motion.div className="max-w-3xl" variants={revealItem} custom={0.06} {...revealWhileInView}>
-            <div className="text-xs uppercase tracking-[0.28em] text-[#c9a24a]">The first padel clubs in Mauritius</div>
+            <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">The first padel clubs in Mauritius</div>
             <h2 className="mt-4 font-home-display text-4xl uppercase leading-[1.06] tracking-[0.04em] text-white sm:text-5xl">
               Two Clubs. Two Experiences.
             </h2>
@@ -211,7 +211,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,11,11,0.08),rgba(11,11,11,0.82))]" />
                 </div>
                 <div className="p-6 lg:p-7">
-                  <div className="text-xs uppercase tracking-[0.24em] text-[#c9a24a]">
+                  <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">
                     {club.slug === 'grand-baie' ? 'Grand Baie' : 'Black River'}
                   </div>
                   <p className="mt-4 max-w-xl text-sm leading-8 text-white/72">{CLUB_COPY[club.slug]}</p>
@@ -219,7 +219,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
                     {CLUB_TAGS[club.slug]?.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full border border-[#c9a24a]/18 bg-white/[0.03] px-3 py-2 text-[11px] uppercase tracking-[0.16em] text-white/58"
+                        className="rounded-full border border-[#ffb300]/18 bg-white/[0.03] px-3 py-2 text-[11px] uppercase tracking-[0.16em] text-white/58"
                       >
                         {tag}
                       </span>
@@ -243,11 +243,11 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
             custom={0.08}
             {...revealWhileInView}
           >
-            <div className="mx-auto h-px w-36 bg-[linear-gradient(90deg,transparent,rgba(201,162,74,0.7),transparent)]" />
+            <div className="mx-auto h-px w-36 bg-[linear-gradient(90deg,transparent,rgba(255,179,0,0.7),transparent)]" />
             <p className="my-8 font-home-display text-3xl leading-[1.24] text-white sm:text-4xl">
               Urban Sport introduced padel to Mauritius and continues to define its standard today.
             </p>
-            <div className="mx-auto h-px w-36 bg-[linear-gradient(90deg,transparent,rgba(201,162,74,0.7),transparent)]" />
+            <div className="mx-auto h-px w-36 bg-[linear-gradient(90deg,transparent,rgba(255,179,0,0.7),transparent)]" />
           </motion.div>
         </div>
       </section>
@@ -270,7 +270,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
             custom={0.08}
             {...revealWhileInView}
           >
-            <div className="text-xs uppercase tracking-[0.28em] text-[#c9a24a]">Experience</div>
+            <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Experience</div>
             <h2 className="mt-4 font-home-display text-4xl uppercase leading-[1.06] tracking-[0.04em] text-white sm:text-5xl">
               More Than Just a Court
             </h2>
@@ -287,15 +287,15 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
       <section className="pb-24">
         <div className="page-container">
           <motion.div
-            className="relative overflow-hidden rounded-[2rem] border border-[#c9a24a]/16 bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015))] px-6 py-10 text-center shadow-[0_20px_70px_rgba(0,0,0,0.35)] lg:px-10 lg:py-12"
+            className="relative overflow-hidden rounded-[2rem] border border-[#ffb300]/16 bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015))] px-6 py-10 text-center shadow-[0_20px_70px_rgba(0,0,0,0.35)] lg:px-10 lg:py-12"
             variants={revealItem}
             custom={0.08}
             {...revealWhileInView}
           >
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(201,162,74,0.15),transparent_58%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,179,0,0.15),transparent_58%)]" />
             <div className="absolute inset-0 opacity-[0.03] [background-image:linear-gradient(rgba(255,255,255,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.5)_1px,transparent_1px)] [background-size:28px_28px]" />
             <div className="relative z-10 mx-auto max-w-2xl">
-              <div className="text-xs uppercase tracking-[0.28em] text-[#c9a24a]">Booking</div>
+              <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Booking</div>
               <h2 className="mt-4 font-home-display text-4xl uppercase leading-[1.06] tracking-[0.04em] text-white sm:text-5xl">
                 Book Your Session
               </h2>
@@ -305,7 +305,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
               <p className="mt-3 text-[15px] leading-8 text-white/56 sm:text-base">
                 Courts available daily in Grand Baie and Black River.
               </p>
-              <Link href="/booking" className="btn-premium mt-8 inline-flex px-9 py-4 shadow-[0_16px_38px_rgba(201,168,76,0.24)]">
+              <Link href="/booking" className="btn-premium mt-8 inline-flex px-9 py-4 shadow-[0_16px_38px_rgba(255,179,0,0.24)]">
                 Book Now
               </Link>
             </div>
@@ -322,7 +322,7 @@ export default function HomeLanding({ clubs }: HomeLandingProps) {
             {...revealWhileInView}
           >
             <p className="font-home-display text-2xl uppercase tracking-[0.08em] text-white sm:text-3xl">
-              Urban Sport <span className="text-[#c9a24a]">— The original padel clubs in Mauritius.</span>
+              Urban Sport <span className="text-[#ffb300]">— The original padel clubs in Mauritius.</span>
             </p>
           </motion.div>
         </div>

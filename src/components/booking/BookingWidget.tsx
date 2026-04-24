@@ -65,7 +65,7 @@ export default function BookingWidget({ clubs }: { clubs: ClubContent[] }) {
                   key={label}
                   className={cn(
                     'rounded-full border px-4 py-2 text-xs uppercase tracking-[0.2em] transition-all',
-                    active && 'border-[#d4af37] bg-[#d4af37]/12 text-[#d4af37]',
+                    active && 'border-[#ffb300] bg-[#ffb300]/12 text-[#ffb300]',
                     done && 'border-emerald-400/40 bg-emerald-400/10 text-emerald-300',
                     !active && !done && 'border-white/10 text-white/35'
                   )}
@@ -89,7 +89,7 @@ export default function BookingWidget({ clubs }: { clubs: ClubContent[] }) {
                   className={cn(
                     'rounded-[1.5rem] border p-5 text-left transition-all',
                     club.slug === clubSlug
-                      ? 'border-[#d4af37] bg-white/[0.05]'
+                      ? 'border-[#ffb300] bg-white/[0.05]'
                       : 'border-white/8 bg-white/[0.03] hover:border-white/20 hover:bg-white/[0.045]'
                   )}
                 >
@@ -98,10 +98,10 @@ export default function BookingWidget({ clubs }: { clubs: ClubContent[] }) {
                       <div className="text-xs uppercase tracking-[0.24em] text-white/35">{club.region}</div>
                       <div className="mt-3 font-display text-4xl uppercase tracking-[0.12em] text-white">{club.name.replace('Urban Sport ', '')}</div>
                     </div>
-                    <ArrowRight className={cn('mt-1 h-4 w-4 transition-transform', club.slug === clubSlug && 'translate-x-1 text-[#d4af37]')} />
+                    <ArrowRight className={cn('mt-1 h-4 w-4 transition-transform', club.slug === clubSlug && 'translate-x-1 text-[#ffb300]')} />
                   </div>
                   <div className="mt-2 text-sm text-white/55">{club.shortDescription}</div>
-                  <div className="mt-5 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#d4af37]">
+                  <div className="mt-5 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#ffb300]">
                     <MapPin className="h-3.5 w-3.5" />
                     {club.phone}
                   </div>
@@ -126,12 +126,12 @@ export default function BookingWidget({ clubs }: { clubs: ClubContent[] }) {
                     }}
                     className={cn(
                       'rounded-[1.25rem] border px-4 py-5 text-left transition-all',
-                      date === value ? 'border-[#d4af37] bg-[#d4af37]/10' : 'border-white/8 bg-white/[0.03] hover:bg-white/[0.045]'
+                      date === value ? 'border-[#ffb300] bg-[#ffb300]/10' : 'border-white/8 bg-white/[0.03] hover:bg-white/[0.045]'
                     )}
                   >
                     <div className="text-xs uppercase tracking-[0.2em] text-white/35">Date</div>
                     <div className="mt-2 flex items-center gap-2 text-white">
-                      <CalendarDays className="h-4 w-4 text-[#d4af37]" />
+                      <CalendarDays className="h-4 w-4 text-[#ffb300]" />
                       {value}
                     </div>
                   </button>
@@ -156,15 +156,15 @@ export default function BookingWidget({ clubs }: { clubs: ClubContent[] }) {
                     }}
                     className={cn(
                       'rounded-[1.25rem] border px-4 py-4 text-left transition-all',
-                      slot === value ? 'border-[#d4af37] bg-[#d4af37]/10' : 'border-white/8 bg-white/[0.03] hover:bg-white/[0.045]'
+                      slot === value ? 'border-[#ffb300] bg-[#ffb300]/10' : 'border-white/8 bg-white/[0.03] hover:bg-white/[0.045]'
                     )}
                   >
                     <div className="flex items-center justify-between gap-3 text-white">
                       <div className="flex items-center gap-2">
-                        <Clock3 className="h-4 w-4 text-[#d4af37]" />
+                        <Clock3 className="h-4 w-4 text-[#ffb300]" />
                         {value} - 90 min
                       </div>
-                      <div className="text-xs uppercase tracking-[0.16em] text-[#d4af37]">{price}</div>
+                      <div className="text-xs uppercase tracking-[0.16em] text-[#ffb300]">{price}</div>
                     </div>
                     <div className="mt-2 text-xs uppercase tracking-[0.18em] text-white/35">Preferred timing request</div>
                   </button>
@@ -211,7 +211,7 @@ export default function BookingWidget({ clubs }: { clubs: ClubContent[] }) {
 
         <aside className="lg:sticky lg:top-28 lg:self-start">
           <div className="surface-panel p-5">
-            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[#d4af37]">
+            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[#ffb300]">
               <Wallet className="h-4 w-4" />
               Booking summary
             </div>

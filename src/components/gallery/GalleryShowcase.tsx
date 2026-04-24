@@ -26,7 +26,7 @@ export default function GalleryShowcase({ items }: { items: GalleryItem[] }) {
               />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.08),rgba(0,0,0,0.78))]" />
               <div className="absolute inset-x-0 bottom-0 p-5">
-                <div className="text-xs uppercase tracking-[0.22em] text-[#d4af37]">{item.category}</div>
+                <div className="text-xs uppercase tracking-[0.22em] text-[#ffb300]">{item.category}</div>
                 <div className="mt-2 text-2xl font-semibold text-white">{item.title}</div>
                 <p className="mt-2 text-sm leading-7 text-white/66">{item.description}</p>
               </div>
@@ -52,7 +52,7 @@ export default function GalleryShowcase({ items }: { items: GalleryItem[] }) {
                 <Image src={active.image} alt={active.title} fill className="object-cover" />
               </div>
               <div className="flex flex-col justify-end p-6 lg:p-10">
-                <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">{active.category}</div>
+                <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">{active.category}</div>
                 <h2 className="mt-4 font-display text-4xl uppercase tracking-[0.08em] text-white sm:text-5xl">
                   {active.title}
                 </h2>

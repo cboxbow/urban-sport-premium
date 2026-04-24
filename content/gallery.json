@@ -22,6 +22,160 @@
     "isFeatured": true
   },
   {
+    "id": "gallery-urban-team-four",
+    "title": "Urban team portrait",
+    "category": "clubs",
+    "image": "/gallery/players/urban-team-four.jpg",
+    "description": "Club-first player portrait with Urban Sport kit and strong lifestyle energy.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": true
+  },
+  {
+    "id": "gallery-women-court-lineup",
+    "title": "Women court lineup",
+    "category": "clubs",
+    "image": "/gallery/players/women-court-lineup.jpg",
+    "description": "On-court group visual that brings more player presence into the club gallery.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-friendly-court-pose",
+    "title": "Friendly court pose",
+    "category": "clubs",
+    "image": "/gallery/players/friendly-court-pose.jpg",
+    "description": "Social court moment with a lighter club atmosphere and player personality.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-black-river-overlook",
+    "title": "Black River overlook",
+    "category": "clubs",
+    "image": "/gallery/players/black-river-overlook.jpeg",
+    "description": "Elevated club view showing the full Black River footprint and destination setting.",
+    "clubSlug": "black-river",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-women-team-portrait",
+    "title": "Women team portrait",
+    "category": "clubs",
+    "image": "/gallery/players/women-team-portrait.jpeg",
+    "description": "Additional club portrait that expands the player-led side of the gallery.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-junior-duo",
+    "title": "Junior duo",
+    "category": "clubs",
+    "image": "/gallery/players/junior-duo.jpeg",
+    "description": "Young player portrait that helps the gallery feel more community-driven and complete.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-junior-portrait",
+    "title": "Junior portrait",
+    "category": "clubs",
+    "image": "/gallery/players/junior-portrait.jpeg",
+    "description": "Single-player portrait showing the junior pathway inside the Urban Sport environment.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-afrasia-lineup",
+    "title": "Afrasia lineup",
+    "category": "events",
+    "image": "/gallery/players/afrasia-lineup.jpg",
+    "description": "Event-day group image with sponsor branding and stronger tournament-day context.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": true
+  },
+  {
+    "id": "gallery-club-podium-pose",
+    "title": "Club podium pose",
+    "category": "events",
+    "image": "/gallery/players/club-podium-pose.jpg",
+    "description": "Podium-style event photo used to add a more human tournament story to the archive.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-prize-giving",
+    "title": "Prize giving",
+    "category": "events",
+    "image": "/gallery/players/prize-giving.jpg",
+    "description": "Award moment that brings real competition outcomes into the event selection.",
+    "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-ghost-padel-neon-team",
+    "title": "Ghost Padel team",
+    "category": "events",
+    "image": "/gallery/players/ghost-padel-neon-team.jpeg",
+    "description": "Night-format event visual that supports the Urban Sport experience layer.",
+    "clubSlug": "grand-baie",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-ghost-padel-neon-podium",
+    "title": "Ghost Padel podium",
+    "category": "events",
+    "image": "/gallery/players/ghost-padel-neon-podium.jpeg",
+    "description": "Neon-lit group moment showing the social and playful side of night sessions.",
+    "clubSlug": "grand-baie",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-ghost-padel-neon-group",
+    "title": "Ghost Padel group",
+    "category": "events",
+    "image": "/gallery/players/ghost-padel-neon-group.jpeg",
+    "description": "Additional Ghost Padel moment used to deepen the event-storytelling layer.",
+    "clubSlug": "grand-baie",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-ghost-padel-neon-line",
+    "title": "Ghost Padel lineup",
+    "category": "events",
+    "image": "/gallery/players/ghost-padel-neon-line.jpeg",
+    "description": "Night event lineup with stronger fluorescent visuals and player detail.",
+    "clubSlug": "grand-baie",
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
     "id": "gallery-season-calendar",
     "title": "2026 season calendar",
     "category": "events",
@@ -50,6 +204,17 @@
     "image": "/gallery/academy-coaching.jpeg",
     "description": "Campaign-led coaching visual used in the curated media library.",
     "clubSlug": null,
+    "tournamentSlug": null,
+    "isPublished": true,
+    "isFeatured": false
+  },
+  {
+    "id": "gallery-ghost-padel-poster",
+    "title": "Ghost Padel poster",
+    "category": "campaigns",
+    "image": "/gallery/players/ghost-padel-poster.jpeg",
+    "description": "Campaign poster retained in the campaign filter rather than mixed into club visuals.",
+    "clubSlug": "grand-baie",
     "tournamentSlug": null,
     "isPublished": true,
     "isFeatured": false

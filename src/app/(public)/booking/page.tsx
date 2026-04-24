@@ -8,7 +8,7 @@ export default function BookingPage() {
     <div className="bg-black pt-28 text-white">
       <section className="page-container pb-20">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">Booking access</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Booking access</div>
           <h1 className="mt-4 font-display text-5xl uppercase tracking-[0.08em] sm:text-7xl">Book Through The Urban Sport App</h1>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-8 text-white/62 sm:text-base">
             Download the official Urban Sport Mauritius app to book courts in Grand Baie and Black River, manage your sessions, and access the club calendar directly.
@@ -17,7 +17,7 @@ export default function BookingPage() {
 
         <div className="mx-auto mt-12 grid max-w-4xl gap-6 lg:grid-cols-2">
           <article className="surface-panel p-8 text-center">
-            <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">iPhone</div>
+            <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">iPhone</div>
             <h2 className="mt-4 font-home-display text-4xl uppercase tracking-[0.05em] text-white">App Store</h2>
             <p className="mt-4 text-sm leading-7 text-white/58">
               Open the App Store and download the Urban Sport Mauritius app on iPhone.
@@ -33,7 +33,7 @@ export default function BookingPage() {
           </article>
 
           <article className="surface-panel p-8 text-center">
-            <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Android</div>
+            <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Android</div>
             <h2 className="mt-4 font-home-display text-4xl uppercase tracking-[0.05em] text-white">Google Play</h2>
             <p className="mt-4 text-sm leading-7 text-white/58">
               Download the Urban Sport Mauritius app on Android and book directly from Google Play.

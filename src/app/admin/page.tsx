@@ -7,9 +7,9 @@ export default async function AdminDashboard() {
   return (
     <div className="p-6 md:p-8">
       <div className="mb-8 flex flex-col gap-3">
-        <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">Admin overview</div>
+        <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Admin overview</div>
         <h1 className="font-display text-5xl uppercase tracking-[0.1em] text-white">Dashboard</h1>
-        <div className="rounded-[1.5rem] border border-[#d4af37]/30 bg-[#d4af37]/10 px-4 py-4 text-sm text-white/72">
+        <div className="rounded-[1.5rem] border border-[#ffb300]/30 bg-[#ffb300]/10 px-4 py-4 text-sm text-white/72">
           Protected local admin for content, media, tournaments, memberships, sponsors, and booking requests.
         </div>
       </div>
@@ -22,7 +22,7 @@ export default async function AdminDashboard() {
           ['Booking requests', String(summary.counts.bookingRequests)],
         ].map(([label, value]) => (
           <div key={label} className="rounded-[1.75rem] border border-white/8 bg-white/[0.03] p-5">
-            <div className="font-display text-5xl uppercase tracking-[0.12em] text-[#d4af37]">{value}</div>
+            <div className="font-display text-5xl uppercase tracking-[0.12em] text-[#ffb300]">{value}</div>
             <div className="mt-2 text-xs uppercase tracking-[0.2em] text-white/42">{label}</div>
           </div>
         ))}
@@ -39,7 +39,7 @@ export default async function AdminDashboard() {
           ['/admin/league', 'Manage league'],
           ['/admin/settings', 'Update settings'],
         ].map(([href, label]) => (
-          <Link key={href} href={href} className="surface-panel p-5 text-sm uppercase tracking-[0.18em] text-white/72 transition-colors hover:border-[#d4af37]/30 hover:text-white">
+          <Link key={href} href={href} className="surface-panel p-5 text-sm uppercase tracking-[0.18em] text-white/72 transition-colors hover:border-[#ffb300]/30 hover:text-white">
             {label}
           </Link>
         ))}
@@ -47,7 +47,7 @@ export default async function AdminDashboard() {
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
         <div className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-6">
-          <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Recent booking requests</div>
+          <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Recent booking requests</div>
           <div className="mt-5 grid gap-3">
             {summary.recentBookingRequests.map((booking) => (
               <div key={booking.id} className="rounded-[1.25rem] border border-white/8 p-4">
@@ -58,7 +58,7 @@ export default async function AdminDashboard() {
                       {booking.clubSlug} | {booking.preferredSlot}
                     </div>
                   </div>
-                  <div className="text-right text-sm text-[#d4af37]">{booking.date}</div>
+                  <div className="text-right text-sm text-[#ffb300]">{booking.date}</div>
                 </div>
               </div>
             ))}
@@ -66,7 +66,7 @@ export default async function AdminDashboard() {
         </div>
 
         <div className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-6">
-          <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Recent inquiries</div>
+          <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Recent inquiries</div>
           <div className="mt-5 grid gap-3">
             {summary.recentEventInquiries.map((item) => (
               <div key={item.id} className="rounded-[1.25rem] border border-white/8 p-4">

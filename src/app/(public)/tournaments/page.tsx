@@ -36,7 +36,7 @@ const CIRCUITS: Array<{
     posterImage: '/tournaments/season/grand-baie-season-poster.jpg',
     supportImage: '/tournaments/season/grand-baie-date-board.jpeg',
     posterHref: '/tournaments/grand-baie-season-poster-2026.pdf',
-    accent: '#d4af37',
+    accent: '#ffb300',
     stats: ['15 listed season stops', 'M500 major category included', 'Club-first event rhythm'],
     highlights: [
       {
@@ -92,7 +92,7 @@ const CIRCUITS: Array<{
     posterImage: '/tournaments/season/black-river-season-poster.jpeg',
     supportImage: '/tournaments/season/urban-2026-calendar.jpeg',
     posterHref: '/tournaments/black-river-season-poster-2026.pdf',
-    accent: '#d4af37',
+    accent: '#ffb300',
     stats: ['15 listed season stops', 'M500 major category included', 'Competition-led venue'],
     highlights: [
       {
@@ -147,7 +147,7 @@ export default function TournamentsPage() {
       <section className="page-container pb-14">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">Tournament season</div>
+            <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Tournament season</div>
             <h1 className="mt-4 font-display text-5xl uppercase tracking-[0.08em] sm:text-6xl">Grand Baie and Black River circuits</h1>
             <p className="mt-5 max-w-2xl text-sm leading-8 text-white/60">
               The `TOURNAMENT POSTER` folder contains a full 2026 competition system: one annual calendar, one season poster for each club, and a monthly poster sequence for Grand Baie and Black River. This page is now structured around those real source materials instead of generic placeholder cards.
@@ -164,7 +164,7 @@ export default function TournamentsPage() {
               <Image src="/tournaments/season/urban-2026-calendar.jpeg" alt="Urban Sport 2026 tournament calendar" fill className="object-cover" />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.06),rgba(0,0,0,0.3)_55%,rgba(0,0,0,0.82))]" />
               <div className="absolute bottom-0 left-0 p-6">
-                <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Verified from folder</div>
+                <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Verified from folder</div>
                 <h2 className="mt-3 font-display text-4xl uppercase tracking-[0.08em] text-white sm:text-5xl">2026 Calendar</h2>
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-white/68">
                   One master board mapping both clubs, with Grand Baie on the left and Black River on the right.
@@ -181,7 +181,7 @@ export default function TournamentsPage() {
             <section key={circuit.slug} id={circuit.slug} className="grid gap-8">
               <div className="flex flex-wrap items-end justify-between gap-6">
                 <div>
-                  <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">{circuit.label}</div>
+                  <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">{circuit.label}</div>
                   <h2 className="mt-3 font-display text-5xl uppercase tracking-[0.08em] text-white sm:text-6xl">{circuit.title}</h2>
                 </div>
                 <Link href={circuit.posterHref} className="btn-premium">Open Season Poster</Link>
@@ -197,11 +197,11 @@ export default function TournamentsPage() {
 
                 <div className="grid gap-6">
                   <article className="surface-panel p-6">
-                    <div className="text-xs uppercase tracking-[0.22em] text-[#d4af37]">{circuit.eyebrow}</div>
+                    <div className="text-xs uppercase tracking-[0.22em] text-[#ffb300]">{circuit.eyebrow}</div>
                     <p className="mt-4 text-sm leading-8 text-white/64">{circuit.description}</p>
                     <div className="mt-6 flex flex-wrap gap-2">
                       {circuit.stats.map((item) => (
-                        <span key={item} className="rounded-full border border-[#d4af37]/20 bg-[#d4af37]/8 px-3 py-2 text-xs uppercase tracking-[0.16em] text-[#d4af37]">
+                        <span key={item} className="rounded-full border border-[#ffb300]/20 bg-[#ffb300]/8 px-3 py-2 text-xs uppercase tracking-[0.16em] text-[#ffb300]">
                           {item}
                         </span>
                       ))}
@@ -220,7 +220,7 @@ export default function TournamentsPage() {
               <div className="grid gap-6 lg:grid-cols-3">
                 {circuit.highlights.map((item) => (
                   <article key={`${circuit.slug}-${item.title}`} className="surface-panel p-6">
-                    <div className="text-xs uppercase tracking-[0.22em] text-[#d4af37]">{item.title}</div>
+                    <div className="text-xs uppercase tracking-[0.22em] text-[#ffb300]">{item.title}</div>
                     <div className="mt-4 grid gap-3">
                       {item.items.map((line) => (
                         <div key={line} className="rounded-[1.1rem] border border-white/10 bg-white/[0.03] px-4 py-4 text-sm leading-7 text-white/66">
@@ -235,7 +235,7 @@ export default function TournamentsPage() {
               <article className="surface-panel p-6">
                 <div className="flex flex-wrap items-end justify-between gap-4">
                   <div>
-                    <div className="text-xs uppercase tracking-[0.22em] text-[#d4af37]">2026 schedule</div>
+                    <div className="text-xs uppercase tracking-[0.22em] text-[#ffb300]">2026 schedule</div>
                     <h3 className="mt-3 font-display text-4xl uppercase tracking-[0.08em] text-white">Verified from poster files</h3>
                   </div>
                   <div className="text-xs uppercase tracking-[0.18em] text-white/38">
@@ -248,7 +248,7 @@ export default function TournamentsPage() {
                     <div key={`${circuit.slug}-${stop.date}-${stop.category}`} className="rounded-[1.25rem] border border-white/10 bg-white/[0.03] px-4 py-4">
                       <div className="flex items-center justify-between gap-3">
                         <div className="text-sm font-semibold text-white">{stop.date}</div>
-                        <span className="rounded-full border border-[#d4af37]/22 bg-[#d4af37]/8 px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-[#d4af37]">
+                        <span className="rounded-full border border-[#ffb300]/22 bg-[#ffb300]/8 px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-[#ffb300]">
                           {stop.category}
                         </span>
                       </div>

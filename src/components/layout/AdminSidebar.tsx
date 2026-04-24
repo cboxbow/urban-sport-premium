@@ -36,7 +36,7 @@ export default function AdminSidebar() {
           height={44}
           className="h-9 w-auto"
         />
-        <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-[#d4af37]/30 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-[#d4af37]">
+        <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-[#ffb300]/30 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-[#ffb300]">
           <Shield className="h-3.5 w-3.5" />
           Admin Control
         </div>
@@ -54,7 +54,7 @@ export default function AdminSidebar() {
               className={cn(
                 'flex items-center gap-3 rounded-2xl border px-4 py-3 text-sm uppercase tracking-[0.16em] transition-colors',
                 active
-                  ? 'border-[#d4af37]/30 bg-[#d4af37]/10 text-[#d4af37]'
+                  ? 'border-[#ffb300]/30 bg-[#ffb300]/10 text-[#ffb300]'
                   : 'border-transparent text-white/55 hover:border-white/10 hover:bg-white/[0.03] hover:text-white'
               )}
             >

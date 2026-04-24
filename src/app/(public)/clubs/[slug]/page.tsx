@@ -23,7 +23,7 @@ export default async function ClubDetailPage({
             <Image src={club.heroImage} alt={club.name} fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/25 to-transparent" />
             <div className="absolute bottom-0 left-0 p-8">
-              <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">{club.region}</div>
+              <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">{club.region}</div>
               <h1 className="mt-3 font-display text-6xl uppercase tracking-[0.1em] sm:text-8xl">{club.name.replace('Urban Sport ', '')}</h1>
               <div className="mt-2 text-sm uppercase tracking-[0.18em] text-white/55">{getClubDisplayLine(club)}</div>
             </div>
@@ -32,7 +32,7 @@ export default async function ClubDetailPage({
 
         <div className="flex flex-col gap-6">
           <div className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-6">
-            <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Club brief</div>
+            <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Club brief</div>
             <p className="mt-4 text-sm leading-7 text-white/62">{club.description}</p>
             <div className="mt-6 flex flex-wrap gap-2">
               {club.highlights.map((item) => (
@@ -43,8 +43,8 @@ export default async function ClubDetailPage({
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-[#d4af37]/30 bg-[#d4af37]/10 p-6">
-            <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Contact</div>
+          <div className="rounded-[2rem] border border-[#ffb300]/30 bg-[#ffb300]/10 p-6">
+            <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Contact</div>
             <div className="mt-4 text-3xl font-semibold text-white">{club.phone}</div>
             <p className="mt-2 text-sm text-white/66">{club.address}</p>
             <p className="mt-4 text-sm leading-7 text-white/68">{club.shortDescription}</p>
@@ -58,7 +58,7 @@ export default async function ClubDetailPage({
 
       <section className="page-container grid gap-6 py-10 lg:grid-cols-[1fr_1fr]">
         <div className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-6">
-          <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Coaching availability</div>
+          <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Coaching availability</div>
           <h2 className="mt-4 font-display text-4xl uppercase tracking-[0.08em] text-white">{coachingAvailable ? 'Available at this club' : 'Available across the network'}</h2>
           <p className="mt-4 text-sm leading-7 text-white/60">{coaching.intro}</p>
           <div className="mt-5 flex flex-wrap gap-2">
@@ -72,10 +72,10 @@ export default async function ClubDetailPage({
         </div>
 
         <div className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-6">
-          <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">Upcoming tournaments</div>
+          <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">Upcoming tournaments</div>
           <div className="mt-5 grid gap-4">
             {clubTournaments.slice(0, 4).map((tournament) => (
-              <Link key={tournament.id} href={`/tournaments/${tournament.slug}`} className="rounded-[1.25rem] border border-white/8 px-4 py-4 transition-colors hover:border-[#d4af37]/30">
+              <Link key={tournament.id} href={`/tournaments/${tournament.slug}`} className="rounded-[1.25rem] border border-white/8 px-4 py-4 transition-colors hover:border-[#ffb300]/30">
                 <div className="text-lg font-semibold text-white">{tournament.title}</div>
                 <div className="mt-2 text-xs uppercase tracking-[0.18em] text-white/42">{tournament.date}</div>
               </Link>
@@ -90,7 +90,7 @@ export default async function ClubDetailPage({
       </section>
 
       <section className="page-container pb-20">
-        <div className="mb-6 text-xs uppercase tracking-[0.24em] text-[#d4af37]">Gallery</div>
+        <div className="mb-6 text-xs uppercase tracking-[0.24em] text-[#ffb300]">Gallery</div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {club.galleryImages.map((image, index) => (
             <div key={`${image}-${index}`} className="overflow-hidden rounded-[2rem] border border-white/8">

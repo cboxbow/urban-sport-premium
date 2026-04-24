@@ -184,7 +184,7 @@ export function AdminLoginForm() {
     <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-black px-4 py-16 text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.18),transparent_24%)]" />
       <div className="surface-panel relative z-10 w-full max-w-md p-8">
-        <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">Urban Sport Admin</div>
+        <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Urban Sport Admin</div>
         <h1 className="mt-4 font-display text-5xl uppercase tracking-[0.08em] text-white">Login</h1>
         <p className="mt-4 text-sm leading-7 text-white/60">Protected local admin access for content, media, and booking requests.</p>
         <div className="mt-6 grid gap-4">

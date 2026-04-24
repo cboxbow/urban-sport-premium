@@ -13,7 +13,7 @@ export default async function ClubsPage() {
   return (
     <div className="bg-black pt-28 text-white">
       <section className="page-container pb-10">
-        <div className="text-xs uppercase tracking-[0.28em] text-[#d4af37]">Club discovery</div>
+        <div className="text-xs uppercase tracking-[0.28em] text-[#ffb300]">Club discovery</div>
         <h1 className="mt-4 font-display text-5xl uppercase tracking-[0.08em] sm:text-6xl">Two club locations</h1>
         <p className="mt-5 max-w-2xl text-sm leading-7 text-white/58">
           From social sessions and family meet-ups to regular play, coaching, and event moments, each club brings its own atmosphere to the Urban Sport experience.
@@ -27,7 +27,7 @@ export default async function ClubsPage() {
               <Image src={club.heroImage} alt={club.name} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.12),rgba(0,0,0,0.82))]" />
               <div className="absolute bottom-0 left-0 p-6">
-                <div className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">{club.region}</div>
+                <div className="text-xs uppercase tracking-[0.24em] text-[#ffb300]">{club.region}</div>
                 <div className="mt-2 font-display text-5xl uppercase tracking-[0.12em] text-white">{club.name.replace('Urban Sport ', '')}</div>
                 <div className="mt-3 inline-flex rounded-full border border-white/12 bg-black/30 px-3 py-2 text-xs uppercase tracking-[0.18em] text-white/76">
                   {getClubDisplayLine(club)}
@@ -36,10 +36,10 @@ export default async function ClubsPage() {
             </div>
             <div className="grid gap-4 p-6">
               <p className="text-sm leading-7 text-white/58">{club.shortDescription}</p>
-              <div className="text-xs uppercase tracking-[0.18em] text-[#d4af37]">Best for</div>
+              <div className="text-xs uppercase tracking-[0.18em] text-[#ffb300]">Best for</div>
               <div className="flex flex-wrap gap-2">
                 {BEST_FOR[club.slug]?.map((item) => (
-                  <span key={item} className="rounded-full border border-[#d4af37]/25 bg-[#d4af37]/8 px-3 py-2 text-xs uppercase tracking-[0.16em] text-[#d4af37]">
+                  <span key={item} className="rounded-full border border-[#ffb300]/25 bg-[#ffb300]/8 px-3 py-2 text-xs uppercase tracking-[0.16em] text-[#ffb300]">
                     {item}
                   </span>
                 ))}

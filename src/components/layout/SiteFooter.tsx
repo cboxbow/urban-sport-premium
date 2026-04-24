@@ -77,7 +77,7 @@ export default async function SiteFooter() {
               href="https://www.facebook.com/urbansportmauritius"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-white/8 px-4 py-2 transition-colors hover:border-[#d4af37]/30 hover:text-white"
+              className="rounded-full border border-white/8 px-4 py-2 transition-colors hover:border-[#ffb300]/30 hover:text-white"
             >
               Facebook
             </Link>
@@ -85,7 +85,7 @@ export default async function SiteFooter() {
               href="https://www.instagram.com/urbansportmauritius/"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-white/8 px-4 py-2 transition-colors hover:border-[#d4af37]/30 hover:text-white"
+              className="rounded-full border border-white/8 px-4 py-2 transition-colors hover:border-[#ffb300]/30 hover:text-white"
             >
               Instagram
             </Link>
@@ -157,7 +157,7 @@ export default async function SiteFooter() {
               <div key={club.name} className="rounded-3xl border border-white/8 bg-white/[0.03] p-4">
                 <div className="text-xs uppercase tracking-[0.22em] text-white/40">{club.region}</div>
                 <div className="mt-2 text-lg font-semibold text-white">{club.name}</div>
-                <div className="text-sm uppercase tracking-[0.18em] text-[#d4af37]">{club.phone}</div>
+                <div className="text-sm uppercase tracking-[0.18em] text-[#ffb300]">{club.phone}</div>
               </div>
             ))}
           </div>
