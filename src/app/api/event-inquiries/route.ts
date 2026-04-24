@@ -66,6 +66,13 @@ async function sendEventInquiryEmail(payload: z.infer<typeof eventInquirySchema>
     const errorText = await response.text();
     throw new Error(`Resend error ${response.status}: ${errorText}`);
   }
+
+  console.info('Event inquiry email sent', {
+    to: notifyTo,
+    from: fromEmail,
+    inquiryType: payload.inquiryType,
+    fullName: payload.fullName,
+  });
 }
 
 export async function POST(request: NextRequest) {
@@ -82,10 +89,16 @@ export async function POST(request: NextRequest) {
     console.error('Unable to send event inquiry email', error);
   }
 
-  try {
-    created = await createEventInquiry(payload);
-  } catch (error) {
-    console.error('Unable to store event inquiry locally', error);
+  const isServerlessReadOnly = Boolean(process.env.VERCEL);
+
+  if (!isServerlessReadOnly) {
+    try {
+      created = await createEventInquiry(payload);
+    } catch (error) {
+      console.error('Unable to store event inquiry locally', error);
+    }
+  } else {
+    console.info('Skipping local event inquiry storage on Vercel serverless runtime');
   }
 
   if (!created && !emailSent) {
