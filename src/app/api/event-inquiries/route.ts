@@ -24,7 +24,7 @@ async function sendEventInquiryEmail(payload: z.infer<typeof eventInquirySchema>
 
   const safe = (value?: string) => value?.trim() || 'Not provided';
 
-  await fetch('https://api.resend.com/emails', {
+  const response = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${apiKey}`,
@@ -61,16 +61,43 @@ async function sendEventInquiryEmail(payload: z.infer<typeof eventInquirySchema>
       ].join('\n'),
     }),
   });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`Resend error ${response.status}: ${errorText}`);
+  }
 }
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
   const payload = eventInquirySchema.parse(body);
-  const created = await createEventInquiry(payload);
+
+  let created: Awaited<ReturnType<typeof createEventInquiry>> | null = null;
+  let emailSent = false;
+
   try {
     await sendEventInquiryEmail(payload);
+    emailSent = true;
   } catch (error) {
     console.error('Unable to send event inquiry email', error);
   }
-  return NextResponse.json({ ok: true, data: created });
+
+  try {
+    created = await createEventInquiry(payload);
+  } catch (error) {
+    console.error('Unable to store event inquiry locally', error);
+  }
+
+  if (!created && !emailSent) {
+    return NextResponse.json({ ok: false, error: 'Unable to send inquiry' }, { status: 500 });
+  }
+
+  return NextResponse.json({
+    ok: true,
+    data: created,
+    delivery: {
+      emailSent,
+      storedLocally: Boolean(created),
+    },
+  });
 }
