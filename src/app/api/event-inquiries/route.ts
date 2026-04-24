@@ -15,10 +15,13 @@ const eventInquirySchema = z.object({
 
 async function sendEventInquiryEmail(payload: z.infer<typeof eventInquirySchema>) {
   const apiKey = process.env.RESEND_API_KEY;
-  const notifyTo = process.env.ADMIN_NOTIFICATION_EMAIL;
+  const notifyTo = (process.env.ADMIN_NOTIFICATION_EMAIL || '')
+    .split(',')
+    .map((value) => value.trim())
+    .filter(Boolean);
   const fromEmail = process.env.NOTIFICATION_FROM_EMAIL || 'Urban Sport <onboarding@resend.dev>';
 
-  if (!apiKey || !notifyTo) {
+  if (!apiKey || notifyTo.length === 0) {
     return;
   }
 
@@ -32,7 +35,7 @@ async function sendEventInquiryEmail(payload: z.infer<typeof eventInquirySchema>
     },
     body: JSON.stringify({
       from: fromEmail,
-      to: [notifyTo],
+      to: notifyTo,
       subject: `New Urban Sport event inquiry: ${payload.fullName}`,
       reply_to: payload.email,
       html: `
